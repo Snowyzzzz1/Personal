@@ -277,7 +277,7 @@ function farmraid()
                         local t = v.Text
                         local foundNumber = string.gsub(t, 'Get behind a wall before the swarm comes %(','')
                         local foundNumber = string.gsub(foundNumber, '%)','')
-                        if tonumber(foundNumber) == 1 then
+                        if tonumber(foundNumber) == 4 then
                             pcall(function()
                                 repeat
                                     game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = game:GetService("Workspace").misc:FindFirstChild('Rockwall'):FindFirstChild('Safe').CFrame
@@ -300,9 +300,9 @@ function farmraid()
                 print(s)
             end
         end
-        if workspace.Mobs:FindFirstChild('Hive Guard') then
+        if workspace.Mobs:FindFirstChild('Mage of Ice') then
             for _,v in pairs(workspace.Mobs:GetChildren()) do
-                if v.Name == "Hive Guard" then
+                if v.Name == "Mage of Ice" then
                     pcall(function()
                         if not workspace.Mobs:FindFirstChild('Hive Queen') then
                             if v.Humanoid.WalkToPoint == Vector3.new(0,0,0) then
