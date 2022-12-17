@@ -377,23 +377,17 @@ if mob.Name == "Mage of Ice" then -- we dont wanna target useless stuff right
                 task.wait()
                 farmraid()
                 return
-            end
-           
-if mob.Name == "Mage of Ice" then -- we dont wanna target useless stuff right
+         
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(166.6916961669922, 222.55540466308594, -2961.79248046875)
                 task.wait()
                 farmraid()
                 return
-            end           
- 
-if mob.Name == "Mage of Ice" then -- we dont wanna target useless stuff right
+            
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(93.41355895996094, 222.55734252929688, -3034.608642578125)
                 task.wait()
                 farmraid()
                 return
-            end           
-        
-if mob.Name == "Mage of Ice" then -- we dont wanna target useless stuff right
+
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(168.05242919921875, 222.55758666992188, -3110.0302734375)
                 task.wait()
                 farmraid()
