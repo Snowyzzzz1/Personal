@@ -371,19 +371,7 @@ if mob.Name == "Chiller" then -- we dont wanna target useless stuff right
                 farmraid()
                 return
             end
-           
-if mob.Name == "Mage of Ice" then -- we dont wanna target useless stuff right
-                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(237.53916931152344, 222.55587768554688, -3034.029541015625)
-         
-                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(166.6916961669922, 222.55540466308594, -2961.79248046875)
-            
-                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(93.41355895996094, 222.55734252929688, -3034.608642578125)
 
-                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(168.05242919921875, 222.55758666992188, -3110.0302734375)
-                task.wait()
-                farmraid()
-                return
-            end                                                                                                    
             swing = true
             repeat
                 if table.find(getgenv().settings['farmsettings']['silencers'], game.Players.LocalPlayer.Name) then
@@ -452,7 +440,7 @@ pcall(function()
                     if string.find(t, "Get behind a wall") then
                         local foundNumber = string.gsub(t, 'Get behind a wall before the swarm comes %(','')
                         local foundNumber = string.gsub(foundNumber, '%)','')
-                        if tonumber(foundNumber) == 1 then
+                        if tonumber(foundNumber) == 3 then
                             abort = true
                             farmraid()
                         end
