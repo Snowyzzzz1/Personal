@@ -344,6 +344,41 @@ if mob.Name == "Frozen Knight" then -- we dont wanna target useless stuff right
                 return
             end
 
+if mob.Name == "Ice Golem" then -- we dont wanna target useless stuff right
+                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
+                task.wait()
+                farmraid()
+                return
+            end
+
+if mob.Name == "Chiller" then -- we dont wanna target useless stuff right
+                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
+                task.wait()
+                farmraid()
+                return
+            end
+
+if mob.Name == "Frosted Demon" then -- we dont wanna target useless stuff right
+                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
+                task.wait()
+                farmraid()
+                return
+            end
+
+if mob.Name == "Frost Slime" then -- we dont wanna target useless stuff right
+                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
+                task.wait()
+                farmraid()
+                return
+            end
+
+if mob.Name == "Warrior Elf" then -- we dont wanna target useless stuff right
+                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
+                task.wait()
+                farmraid()
+                return
+            end
+
             swing = true
             repeat
                 if table.find(getgenv().settings['farmsettings']['silencers'], game.Players.LocalPlayer.Name) then
