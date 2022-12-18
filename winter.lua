@@ -307,7 +307,7 @@ function farmraid()
                         if not workspace.Mobs:FindFirstChild('Hive Queen') then
                             if v.Humanoid.WalkToPoint == Vector3.new(0,0,0) then
                                 swing = true
-                                wait(0.7) repeat
+                                wait(1) repeat
                                     game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = v.HumanoidRootPart.CFrame + Vector3.new(0,0,7)
                                     lookAt(game.Players.LocalPlayer.Character, v.HumanoidRootPart)
                                     task.wait()
