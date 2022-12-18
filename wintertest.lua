@@ -323,7 +323,8 @@ function farmraid()
         local mob, x, y, z, type = gettarget()
 
         if mob then
-                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
+           if mob then 
+           game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
                 farmraid()
                 return
