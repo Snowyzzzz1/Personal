@@ -326,43 +326,37 @@ function farmraid()
             if mob.Name == "Winter Beast" then -- we dont wanna target useless stuff right
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
-                farmraid()
-                return
+                farmraid()             
               end
               
 if mob.Name == "Ice Monster" then -- we dont wanna target useless stuff right
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
-                farmraid()
-                return
+                farmraid()          
               end
               
 if mob.Name == "Frozen Knight" then -- we dont wanna target useless stuff right
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
-                farmraid()
-                return
+                farmraid()               
             end
             
 if mob.Name == "Frosted Demon" then -- we dont wanna target useless stuff right
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
-                farmraid()
-                return
+                farmraid()               
             end
             
 if mob.Name == "Snowman Warrior" then -- we dont wanna target useless stuff right
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
-                farmraid()
-                return
+                farmraid()            
             end
             
 if mob.Name == "Ice Golem" then -- we dont wanna target useless stuff right
                 game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
-                farmraid()
-                return
+                farmraid()                
             end
             
 if mob.Name == "Chiller" then -- we dont wanna target useless stuff right
