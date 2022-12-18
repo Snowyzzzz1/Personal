@@ -2,7 +2,7 @@ repeat wait() until game:IsLoaded()
 repeat wait() until game:GetService("Players").LocalPlayer:WaitForChild('Loaded').Value == true
 repeat wait() until (#game:GetService("Workspace"):WaitForChild('Mobs'):GetChildren()) > 0
 if workspace.Mobs:FindFirstChild("Queen's Egg") then
-    repeat wait() until workspace.Mobs:FindFirstChild('Hive Guard') -- wanna kill the guards before it goes to the queen egg in hive raid
+    repeat wait() until workspace.Mobs:FindFirstChild('Mage of Ice') -- wanna kill the guards before it goes to the queen egg in hive raid
 end
 
 abort = false
@@ -247,7 +247,7 @@ sell()
 function gettarget()
     local target = game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChild('Crystal') or game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChild('Stand')
     if not target then
-        target = workspace:WaitForChild('Mobs'):FindFirstChild("Hive Queen") or workspace:WaitForChild('Mobs'):FindFirstChild("Hive Guard") or game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChildWhichIsA("Model")
+        target = workspace:WaitForChild('Mobs'):FindFirstChild("Hive Queen") or workspace:WaitForChild('Mobs'):FindFirstChild("Mage of Ice") or game:GetService("Workspace"):WaitForChild('Mobs'):FindFirstChildWhichIsA("Model")
     end
     if target then
         if getgenv().settings['farmsettings']['mobsettings'][target.Name] then
@@ -277,7 +277,7 @@ function farmraid()
                         local t = v.Text
                         local foundNumber = string.gsub(t, 'Get behind a wall before the swarm comes %(','')
                         local foundNumber = string.gsub(foundNumber, '%)','')
-                        if tonumber(foundNumber) == 1 then
+                        if tonumber(foundNumber) == 4 then
                             pcall(function()
                                 repeat
                                     game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = game:GetService("Workspace").misc:FindFirstChild('Rockwall'):FindFirstChild('Safe').CFrame
@@ -300,9 +300,9 @@ function farmraid()
                 print(s)
             end
         end
-        if workspace.Mobs:FindFirstChild('Hive Guard') then
+        if workspace.Mobs:FindFirstChild('Mage of Ice') then
             for _,v in pairs(workspace.Mobs:GetChildren()) do
-                if v.Name == "Hive Guard" then
+                if v.Name == "Mage of Ice" then
                     pcall(function()
                         if not workspace.Mobs:FindFirstChild('Hive Queen') then
                             if v.Humanoid.WalkToPoint == Vector3.new(0,0,0) then
@@ -323,8 +323,7 @@ function farmraid()
         local mob, x, y, z, type = gettarget()
 
         if mob then
-            if mob.Name == "Winter Beast" then -- we dont wanna target useless stuff right
-                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(100,500,100)
+                game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = CFrame.new(167.53504943847656, 222.5566864013672, -3045.381591796875)
                 task.wait()
                 farmraid()
                 return
@@ -398,7 +397,7 @@ pcall(function()
                     if string.find(t, "Get behind a wall") then
                         local foundNumber = string.gsub(t, 'Get behind a wall before the swarm comes %(','')
                         local foundNumber = string.gsub(foundNumber, '%)','')
-                        if tonumber(foundNumber) == 1 then
+                        if tonumber(foundNumber) == 3 then
                             abort = true
                             farmraid()
                         end
