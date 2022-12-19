@@ -483,6 +483,16 @@ coroutine.resume(coroutine.create(function()
 end))
 
 coroutine.resume(coroutine.create(function()
+    while wait(0.5) do
+        if getgenv().settings['autoopenchests'] then
+            local args = {[1] = "Open",[2] = SChest"}
+            game:GetService("ReplicatedStorage").Events.inventory
+Event:FireServer(A_1, A_2)
+         end
+     end
+end))
+
+coroutine.resume(coroutine.create(function()
     while wait() do
         if autodrankthepotions or getgenv().settings['autodrinkpotions'] then 
             game:GetService("ReplicatedStorage").Events.drink:FireServer()
