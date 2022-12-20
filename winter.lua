@@ -277,7 +277,7 @@ function farmraid()
                         local t = v.Text
                         local foundNumber = string.gsub(t, 'Get behind a wall before the swarm comes %(','')
                         local foundNumber = string.gsub(foundNumber, '%)','')
-                        if tonumber(foundNumber) == 4 then
+                        if tonumber(foundNumber) == 8 then
                             pcall(function()
                                 repeat
                                     game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = game:GetService("Workspace").misc:FindFirstChild('Rockwall'):FindFirstChild('Safe').CFrame
@@ -440,7 +440,7 @@ pcall(function()
                     if string.find(t, "Get behind a wall") then
                         local foundNumber = string.gsub(t, 'Get behind a wall before the swarm comes %(','')
                         local foundNumber = string.gsub(foundNumber, '%)','')
-                        if tonumber(foundNumber) == 3 then
+                        if tonumber(foundNumber) == 8 then
                             abort = true
                             farmraid()
                         end
